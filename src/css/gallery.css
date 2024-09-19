@@ -1,0 +1,112 @@
+body {
+    text-align: center;
+}
+
+.gallery{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+form {
+    margin-top: 1rem;
+    margin-bottom: 32px;
+}
+
+.gallery-input{
+    width: 272px;
+    height: 40px;
+    gap: 8px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid #808080;
+}
+
+.gallery-input:hover{
+    border: 1px solid #000000;
+}
+
+.gallery-input:focus {
+    border: 1px solid #4E75FF;
+    outline: none;
+}
+
+.gallery-item{
+    width: 360px;
+    height: 200px;
+    border: 1px solid #808080;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item img {
+    width: 360px;
+    height: 152px;
+    display: block;
+    object-fit: cover;
+}
+
+
+.image-info {
+    display: flex;
+    width: 360px;
+    height: 48px;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 8px;
+    box-sizing: border-box;
+
+}
+.image-info-label{
+    font-family: Montserrat;  
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #2E2F42;
+}
+
+.image-info-value{
+    font-family: Montserrat;
+    /* font-size: 12px; */
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #2E2F42;
+}
+
+
+.search-button {
+    width: Hug (91px)px;
+    height: Hug (40px)px;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    border-radius: 8px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #FFFFFF;
+    background: #4E75FF;
+    border: none;
+}
+
+.search-button:hover{
+    background-color: #6C8CFF;
+}
+
+.hidden {
+    display: none;
+}
