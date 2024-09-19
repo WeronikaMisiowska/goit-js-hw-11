@@ -37,8 +37,8 @@ function displayImages(images) {
   gallery.innerHTML = ''; 
   if (images.length === 0) {
     iziToast.info({
-      title: 'No Images',
-      message: 'Sorry, there are no images matching your search query. Please try again!',
+      message: 'Sorry, there are no images matching your search query. Please, try again!',
+      backgroundColor: '#EF4040',
     });
     return;
   }
