@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.css" />
+   
+    <script type="module" crossorigin src="/goit-js-hw-11/page-2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-DEu1ZBVp.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/styles-1XYXJijl.css">
   </head>
   <body>
-    <header class="header">
+   <header> <header class="header">
   <div class="container">
     <nav class="nav">
       <a class="nav-logo" href="./index.html" aria-label="Site logo">
@@ -18,7 +25,7 @@
       </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link active" href="./page-2.html">Page 2</a>
+          <a class="nav-link active" href="./page-2.html">Go to gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
@@ -28,16 +35,36 @@
   </div>
 </header>
 
+    </header>
 
-    <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 2
-        </h1>
-        <a class="back-link" href="./index.html">Go back</a>
+      <main>
+        
+            <form class="search-form" id="search-form">
+              <input class="gallery-input" type="text" id="query" placeholder="Search images..." />
+              <button class="search-button" type="submit">Search</button>
+            </form>
 
-      </div>
-    </main>
+            <div id="loader" class="loader" style="display: none;"></div>
+
+            <div id="gallery" class="gallery hidden">
+              
+              <a href="${image.largeImageURL}" class="gallery-item">
+                
+                <img src="${image.webformatURL}" alt="${image.tags}" />
+                <div class="image-info">
+                  <p><span class="image-info-label">Likes:</span> <span class="image-info-value">${image.likes}</span></p>
+                  <p><span class="image-info-label">Views:</span> <span class="image-info-value">${image.views}</span></p>
+                  <p><span class="image-info-label">Comments:</span> <span class="image-info-value">${image.comments}</span></p>
+                  <p><span class="image-info-label">Downloads:</span> <span class="image-info-value">${image.downloads}</span></p>
+              </div>
+              </a>
+            </div>
+       
+      
+      </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.js"></script>
+
 
     <footer class="footer">
   <div class="container">
